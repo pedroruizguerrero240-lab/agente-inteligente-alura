@@ -44,6 +44,6 @@ La solución sigue un enfoque modular basado en **RAG (Retrieval-Augmented Gener
 ---
 
 ## 👤 **Autor**
-**Señor Ruiz**  
+**Pedro Ruiz**  
 *Estudiante de Ingeniería en Ciencias de la Computación | **ESPOL***  
 [🔗 Visita mi perfil en GitHub](https://github.com/pedroruizguerrero240-lab)
