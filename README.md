@@ -27,7 +27,7 @@ La solución sigue un enfoque modular basado en **RAG (Retrieval-Augmented Gener
 ## ⚙️ **Instrucciones para Ejecutar**
 1. **Clonar:** `git clone https://github.com/pedroruizguerrero240-lab/agente-inteligente-alura.git`
 2. **Dependencias:** `pip install -r requirements.txt`
-3. **Configuración:** Cree un archivo `.env` con su `COHERE_API_KEY`.
+3. **Configuración:** Cree un archivo `.env` en la raíz del proyecto usando como referencia el archivo `.env.example` y agregue su `COHERE_API_KEY`.
 4. **Ejecutar:** `streamlit run app.py`
 
 ## 💡 **Ejemplos de Interacción**
