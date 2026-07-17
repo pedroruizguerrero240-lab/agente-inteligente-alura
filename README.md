@@ -1,35 +1,54 @@
-# Agente Inteligente de Logística - LogiExpress S.A.
+🚀 Agente Inteligente de Logística: LogiExpress S.A.
+Transformando la atención al cliente mediante Inteligencia Artificial y datos estructurados.
+![Interfaz de Usuario de LogiExpress](agente_logistica.png)
 
-Este proyecto consiste en un agente inteligente diseñado para automatizar y optimizar la atención al cliente de **LogiExpress S.A.**, desarrollado como parte del programa **Oracle Next Education**.
+📝 Descripción del Proyecto
+Este agente inteligente fue desarrollado en el marco del programa Oracle Next Education. Su propósito es automatizar la atención al cliente para LogiExpress S.A., proporcionando respuestas precisas, rápidas y contextualizadas sobre procesos logísticos y políticas de la empresa, reduciendo la carga operativa humana.
 
-## 🚀 Descripción del Proyecto
-El agente utiliza procesamiento de lenguaje natural (NLP) y técnicas de búsqueda vectorial para responder consultas de usuarios sobre procesos logísticos, estado de envíos y políticas de servicio de manera precisa y eficiente.
+🏗️ Arquitectura de la Solución
+La solución sigue un enfoque modular basado en RAG (Retrieval-Augmented Generation):
 
-## 🛠️ Tecnologías Utilizadas
-*   **Lenguaje:** Python 3.14
-*   **Framework de IA:** LangChain
-*   **Base de Datos Vectorial:** FAISS
-*   **Modelos de Embeddings:** Cohere (multilingual-v3.0)
-*   **Frontend:** Streamlit
-*   **Despliegue:** Streamlit Cloud
+Ingesta: Procesamiento y segmentación de documentos PDF de logística.
 
-## 📂 Estructura del Repositorio
-*   `/src`: Contiene la lógica central del agente (consulta, ingesta y configuración).
-*   `/db`: Almacenamiento de la base de datos vectorial (índices FAISS).
-*   `/data`: Documentación base para la ingesta de conocimiento.
-*   `app.py`: Interfaz principal de la aplicación.
+Embeddings: Conversión de texto a vectores mediante modelos multilingües.
 
-## ⚙️ Configuración y Despliegue
-Para ejecutar este proyecto localmente, asegúrese de configurar su entorno:
+Base de Datos: Almacenamiento eficiente con FAISS.
 
-1.  **Clonar el repositorio:**
-    `git clone https://github.com/pedroruizguerrero240-lab/agente-inteligente-alura.git`
-2.  **Instalar dependencias:**
-    `pip install -r requirements.txt`
-3.  **Configurar Variables de Entorno:**
-    Cree un archivo `.env` en la raíz con su `COHERE_API_KEY`.
-4.  **Ejecutar:**
-    `streamlit run app.py`
+Consulta: Interfaz inteligente con LangChain que recupera el contexto relevante antes de generar la respuesta final.
+
+🛠️ Tecnologías y Herramientas
+Lenguaje: Python 3.14
+
+Orquestación: LangChain
+
+IA/Embeddings: Cohere (embed-multilingual-v3.0)
+
+Vector Store: FAISS
+
+Frontend: Streamlit
+
+Despliegue: Streamlit Cloud
+
+🚀 Instrucciones para Ejecutar
+Clonar: `git clone https://github.com/pedroruizguerrero240-lab/agente-inteligente-alura.git`
+
+Dependencias: pip install -r requirements.txt
+
+Secrets: Configure su COHERE_API_KEY en su entorno local (archivo .env) o en los Secrets de su plataforma de despliegue.
+
+Ejecutar: streamlit run app.py
+
+💡 Ejemplos de Interacción
+Preguntas frecuentes del usuario:
+"¿Cuáles son los tiempos de entrega para envíos internacionales?"
+
+"¿Cómo puedo solicitar un reembolso por un paquete dañado?"
+
+"¿Qué documentos necesito para gestionar una exportación?"
+
+Respuestas del Agente:
+Usuario: ¿Cómo puedo rastrear mi pedido?
+Agente: Para rastrear su pedido, ingrese al portal de LogiExpress S.A. con su número de guía. Si tiene problemas, proporcione su número aquí y con gusto verificaré el estado en nuestra base de datos.
 
 ## 👤 Autor
 **Pedro Ruiz**  
